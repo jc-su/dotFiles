@@ -1,7 +1,3 @@
-sudo apt install -y software-properties-common
-sudo add-apt-repository contrib
-sudo add-apt-repository non-free
-
 # xorg display server installation
 sudo apt install -y xorg
 
@@ -50,6 +46,8 @@ sudo apt install -y feh
 sudo apt install -y rofi picom unzip polybar
 
 # Install i3 gaps
+sudo apt install -y meson dh-autoreconf libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev xcb libxcb1-dev libxcb-icccm4-dev libyajl-dev libev-dev libxcb-xkb-dev libxcb-cursor-dev libxkbcommon-dev libxcb-xinerama0-dev libxkbcommon-x11-dev libstartup-notification0-dev libxcb-randr0-dev libxcb-xrm0 libxcb-xrm-dev libxcb-shape0 libxcb-shape0-dev i3status
+
 git clone https://github.com/Airblader/i3 i3-gaps
 cd i3-gaps
 mkdir -p build && cd build
@@ -67,3 +65,5 @@ sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools
 
 
 sudo apt autoremove
+
+printf "\e[1;32mDone! please reboot!\e[0m\n"
