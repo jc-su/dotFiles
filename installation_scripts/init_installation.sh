@@ -1,3 +1,8 @@
+sudo apt install -y software-properties-common
+sudo add-apt-repository contrib
+sudo add-apt-repository non-free
+sudo apt update
+
 # xorg display server installation
 sudo apt install -y xorg
 
